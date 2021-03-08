@@ -19,7 +19,14 @@
     list-style-type: none;
 }
 
-.card-input {
+.list-group-city-info {
+    list-style-type: none;
+    color: red;
+    
+
+}
+
+#card-input {
     margin: 20px 20px 20px 40px;
 }
 
