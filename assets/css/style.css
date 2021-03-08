@@ -1,0 +1,95 @@
+.search-card {
+    background-color: rgb(228, 222, 222);
+    /* width:30%; */
+    height: 630px;
+    float: left;
+    margin: 10px;
+    width: 29%;
+
+}
+
+.list-group-item {
+    margin: 20px 20px 20px 20px;
+    border-style: solid;
+    width: 75%;
+    text-align: center;   
+}
+
+.list-group-list-group-flush {
+    list-style-type: none;
+}
+
+.card-input {
+    margin: 20px 20px 20px 40px;
+}
+
+h2 {
+    margin: 15px;
+}
+
+.city-card {
+    background-color: cadetblue;
+    width: 66%;
+    height: 300px;
+    margin: 10px;
+    float: right;
+}
+
+.card-deck {
+    background-color: rgb(228, 222, 222);
+    margin: 20px;
+    float: right;
+    width: 66%;
+    height: 300px;
+}
+
+.card-title {
+    margin: 1px;
+}
+
+.card-1 {
+    background-color: cadetblue;
+    margin: 20px;
+    width: 15%;
+    height: 200px;
+    grid-template-columns: auto;
+    float: left;
+}
+
+.card-2 {
+    background-color: cadetblue;
+    margin: 20px;
+    width: 15%;
+    height: 200px;
+    grid-template-columns: auto;
+    float: left;
+}
+
+.card-3 {
+    background-color: cadetblue;
+    margin: 20px;
+    width: 15%;
+    height: 200px;
+    grid-template-columns: auto;
+    float: left;
+}
+
+.card-4 {
+    background-color: cadetblue;
+    margin: 20px;
+    width: 15%;
+    height: 200px;
+    grid-template-columns: auto;
+    float: left;
+}
+
+.card-5 {
+    background-color: cadetblue;
+    margin: 20px;
+    width: 15%;
+    height: 200px;
+    grid-template-columns: auto;
+    float: left;
+}
+
+
