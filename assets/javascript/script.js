@@ -36,18 +36,34 @@ fetch(url)
 
     var cityEl = response.name;
     $("#city-header").html(cityEl + "  " + curday("/")); 
+    // $("#day1").html(curday("/"))
+    
 
     var currentTempEl = response.main.temp;
     $("#list-group-city1").html("Current Temperature:" + " " + currentTempEl + "&deg;k");
+    $("#card1-temp").html("Temperature:" + " " + currentTempEl + "k");
 
     var humidityEl = response.main.humidity;
     $("#list-group-city2").html("Current Humidity:" + " " + humidityEl + "%");
+    $("#card1-humidity").html("Humidity:" + " " + humidityEl + "%");
+
 
     var windEl = response.wind.speed;
     $("#list-group-city3").html("Current Wind Speed:" + " " + windEl + "MPH");
 
+    var iconcode = response.weather[0].icon;
+    var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+    console.log(iconurl);
+    $('#card-img').attr('src', iconurl);
+
+    
+    
+
     // var uvEl = response.;
     // $("#list-group-city3").html("Current UV index:" + uvEl)
+
+    ;
+
     
     })
 
