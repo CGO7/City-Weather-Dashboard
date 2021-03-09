@@ -1,6 +1,18 @@
 
 document.getElementById("search").onclick = function() {myFunction()};
 
+var curday = function(sp){
+    today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //As January is 0.
+    var yyyy = today.getFullYear();
+    
+    if(dd<10) dd='0'+dd;
+    if(mm<10) mm='0'+mm;
+    return (mm+sp+dd+sp+yyyy);
+    };
+    console.log(curday('/'));
+
 function myFunction() {
     var cityName = document.getElementById("card-input").value
     var apikey = "ebc3f1f4905a6bd26e6d5d0ef96dcd5d"
@@ -16,19 +28,30 @@ fetch(url)
     }).then(function (response) {
         console.log(response)
 
-        for (var i=0; i< response.daily[i].length; i++) {
-            response
-        }
+       
+    
+
+    localStorage.setItem("city",document.getElementById("card-input").value);
+
+    var cityEl = response.name;
+    $("#city-header").html(cityEl) + curday;
+
+    var currentTempEl = response.main.temp;
+    $("#list-group-city1").html("Current Temperature:" + currentTempEl + "&deg;k");
+
+    var humidityEl = response.main.humidity;
+    $("#list-group-city2").html("Current Humidity:" + humidityEl + "%");
+
+    var windEl = response.wind.speed;
+    $("#list-group-city3").html("Current Wind Speed:" + windEl + "MPH");
+
+    // var uvEl = response.;
+    // $("#list-group-city3").html("Current UV index:" + uvEl)
+    
     })
 
 }
-
-
-
-
-
-
-        // current weather promise
+// current weather promise
 
         // var url2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,daily&appid=${apikey}`
         // fetch(url2)
