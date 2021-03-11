@@ -36,7 +36,7 @@ fetch(url)
 
     var cityEl = response.name;
     $("#city-header").html(cityEl + "  " + curday("/")); 
-    // $("#day1").html(curday("/"))
+    $("#day1").html(curday("/"))
     
 
     var currentTempEl = response.main.temp;
