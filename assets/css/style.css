@@ -64,8 +64,9 @@ h2 {
     margin: 20px;
     width: 15%;
     height: 200px;
-    grid-template-columns: auto;
+    grid-template-columns:auto;
     float: left;
+    position:relative;
 }
 
 /* .card-2 {
